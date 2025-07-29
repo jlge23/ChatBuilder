@@ -1,0 +1,20 @@
+{
+  "name": "chatbuilder",
+  "version": "1.0.0",
+  "description": "\"# ChatBuilder\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jlge23/ChatBuilder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jlge23/ChatBuilder/issues"
+  },
+  "homepage": "https://github.com/jlge23/ChatBuilder#readme"
+}
