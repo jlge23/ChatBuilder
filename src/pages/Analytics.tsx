@@ -7,7 +7,9 @@ const metrics = [
   { icon: Clock, label: 'Tiempo Respuesta Promedio', value: '1.2s', change: '-15%', period: 'vs mes anterior' },
   { icon: Bot, label: 'Resolución Automática', value: '87.3%', change: '+5%', period: 'vs mes anterior' },
   { icon: CheckCircle, label: 'Satisfacción Cliente', value: '4.8/5', change: '+2%', period: 'vs mes anterior' },
-  { icon: TrendingUp, label: 'Conversiones', value: '23.4%', change: '+8%', period: 'vs mes anterior' }
+  { icon: TrendingUp, label: 'Conversiones', value: '23.4%', change: '+8%', period: 'vs mes anterior' },
+  { icon: TrendingUp, label: 'Leads Generados', value: '1,247', change: '+15%', period: 'vs mes anterior' },
+  { icon: TrendingUp, label: 'Ingresos por Embudo', value: '$45,680', change: '+23%', period: 'vs mes anterior' }
 ];
 
 const topIntents = [
@@ -43,7 +45,7 @@ export default function Analytics() {
       </div>
 
       {/* Metrics Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
         {metrics.map((metric, index) => {
           const Icon = metric.icon;
           return (

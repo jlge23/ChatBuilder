@@ -7,7 +7,9 @@ import {
   Activity,
   Clock,
   CheckCircle,
-  AlertTriangle
+  AlertTriangle,
+  DollarSign,
+  Target
 } from 'lucide-react';
 import StatCard from '../components/Dashboard/StatCard';
 import RecentConversations from '../components/Dashboard/RecentConversations';
@@ -42,6 +44,20 @@ export default function Dashboard() {
       value: '892',
       change: '+15%',
       color: 'orange'
+    },
+    {
+      icon: DollarSign,
+      title: 'Ingresos del Mes',
+      value: '$45,680',
+      change: '+23%',
+      color: 'green'
+    },
+    {
+      icon: Target,
+      title: 'Conversión Embudo',
+      value: '12.3%',
+      change: '+1.8%',
+      color: 'purple'
     }
   ];
 
@@ -60,7 +76,7 @@ export default function Dashboard() {
       </div>
 
       {/* Stats Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-6 mb-8">
         {stats.map((stat, index) => (
           <StatCard key={index} {...stat} />
         ))}
@@ -81,8 +97,8 @@ export default function Dashboard() {
       {/* AI Configuration Status */}
       <div className="mt-6">
         <div className="bg-gray-800 rounded-lg p-6">
-          <h3 className="text-xl font-semibold text-white mb-4">Configuración Ollama</h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <h3 className="text-xl font-semibold text-white mb-4">Estado del Sistema</h3>
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
             <div className="bg-gray-700 rounded-lg p-4">
               <div className="flex items-center justify-between">
                 <span className="text-gray-300">Modelo</span>
@@ -99,6 +115,12 @@ export default function Dashboard() {
               <div className="flex items-center justify-between">
                 <span className="text-gray-300">Temperatura</span>
                 <span className="text-blue-400 font-medium">0.7</span>
+              </div>
+            </div>
+            <div className="bg-gray-700 rounded-lg p-4">
+              <div className="flex items-center justify-between">
+                <span className="text-gray-300">Embudo Activo</span>
+                <span className="text-purple-400 font-medium">E-commerce</span>
               </div>
             </div>
           </div>

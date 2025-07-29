@@ -8,6 +8,7 @@ import {
   BarChart3, 
   Settings, 
   Bot,
+  TrendingUp,
   X,
   Menu
 } from 'lucide-react';
@@ -22,6 +23,7 @@ const menuItems = [
   { icon: GitBranch, label: 'Constructor de Flujos', path: '/flow-builder' },
   { icon: MessageCircle, label: 'Conversaciones', path: '/conversations' },
   { icon: FileText, label: 'Plantillas', path: '/templates' },
+  { icon: TrendingUp, label: 'Embudo de Ventas', path: '/sales-funnel' },
   { icon: BarChart3, label: 'Analíticas', path: '/analytics' },
   { icon: Settings, label: 'Configuración', path: '/settings' },
 ];

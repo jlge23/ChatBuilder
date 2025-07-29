@@ -7,6 +7,7 @@ import Conversations from './pages/Conversations';
 import Settings from './pages/Settings';
 import Templates from './pages/Templates';
 import Analytics from './pages/Analytics';
+import SalesFunnel from './pages/SalesFunnel';
 
 function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -23,6 +24,7 @@ function App() {
               <Route path="/flow-builder" element={<FlowBuilder />} />
               <Route path="/conversations" element={<Conversations />} />
               <Route path="/templates" element={<Templates />} />
+              <Route path="/sales-funnel" element={<SalesFunnel />} />
               <Route path="/analytics" element={<Analytics />} />
               <Route path="/settings" element={<Settings />} />
             </Routes>
